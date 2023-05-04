@@ -1,0 +1,385 @@
+/* Type Scale */
+/* 12 / 16 / 18 / 20 / 24 / 28 / 34 / 38 / 50 / 66 */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  color: #444;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.mainHeader {
+  background-color: #f7f7f7;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 0 5px #00000099;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.headerTabs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.barNav {
+  display: flex;
+  gap: 1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.barNav a:link {
+  padding: 20px 20px;
+}
+
+.barNav a:hover,
+.barNav a:active {
+  color: #fff;
+  background-color: #ad522a;
+  transition: 150ms ease-in;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+}
+.material-symbols-outlined:hover {
+  color: #ad522a;
+}
+
+.currentIcon {
+  color: #934422;
+}
+
+.headerIcons {
+  display: flex;
+  gap: 16px;
+}
+
+.currentTab {
+  background-color: #ad522a;
+  color: #fff;
+}
+
+.indexBody {
+  background-image: url('../images/sica_background.png');
+  background-position: center;
+  background-size: cover;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContainer {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.pageBody {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  margin: 1.25rem;
+  margin-left: 18rem;
+  margin-top: 5rem;
+  width: 100%;
+}
+
+.sideNav {
+  background-color: #f7f7f7;
+  border-right: 1px solid #ddd;
+  flex-direction: column;
+  width: 16rem;
+  height: 100%;
+  position: fixed;
+  top: 3.8rem;
+  left: 0;
+  z-index: 1;
+  box-shadow: 0 0 5px -2 #00000099;
+}
+
+button {
+  cursor: pointer;
+}
+
+.inputStyle {
+  background-color: #eeeeee;
+  border: none;
+  border-radius: 8px;
+}
+
+.disabled {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #a9a9a9;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border: 1px solid #444;
+  outline: none;
+}
+
+.primaryButton {
+  background-clip: padding-box;
+  background-color: #687448;
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.primaryButton:hover,
+.primaryButton:focus {
+  background-color: #9cae6c;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 4px 12px;
+}
+
+.primaryButton:hover {
+  transform: translateY(-5px);
+}
+
+.primaryButton:active {
+  background-color: #57613c;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px 0;
+  transform: translateY(0);
+}
+
+.secondaryButton {
+  color: #687448;
+  background-clip: padding-box;
+  background-color: #fff;
+  border: 2px solid #687448;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.secondaryButton:hover,
+.secondaryButton:focus {
+  background-color: #9cae6c;
+  color: #fff;
+  border: 2px solid #9cae6c;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 4px 12px;
+}
+
+.secondaryButton:hover {
+  transform: translateY(-5px);
+}
+
+.secondaryButton:active {
+  background-color: #57613c;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px 0;
+  transform: translateY(0);
+}
+
+.destructiveButton {
+  background-clip: padding-box;
+  background-color: #974724;
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.destructiveButton:hover,
+.destructiveButton:focus {
+  background-color: #c25c2f;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 4px 12px;
+}
+
+.destructiveButton:hover {
+  transform: translateY(-5px);
+}
+
+.destructiveButton:active {
+  background-color: #6c331a;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px 0;
+  transform: translateY(0);
+}
+
+.uploadPictureButton {
+  background-clip: padding-box;
+  background-color: #e4e4e4;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #444;
+  cursor: pointer;
+  min-height: 2rem;
+  padding: 0.25rem 0.5rem;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-size: 14px;
+}
+
+.uploadPictureButton:hover,
+.uploadPictureButton:focus {
+  background-color: #b2b2b2;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 4px 12px;
+}
+
+.uploadPictureButton:hover {
+  transform: translateY(-5px);
+}
+
+.uploadPictureButton:active {
+  background-color: #b2b2b2;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px 0;
+  transform: translateY(0);
+}
+
+.disabledButton,
+.disabledButton:hover {
+  background-color: #d6d6d6;
+  color: #999;
+  cursor: default;
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.footer {
+  border-top: 1px solid #ddd;
+  background-color: #f7f7f7;
+  color: #444;
+  height: 30px;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin-left: 14rem;
+}
+
+.completeFooter {
+  margin-top: auto;
+  margin-left: 0;
+}
+
+.copyrightText {
+  font-size: 12px;
+}
+
+.logoReports {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: auto;
+  padding: 10px;
+}
+
+.reviewAssetRegistration {
+  padding: 20px;
+  width: 70%;
+}
+
+.smallText {
+  font-size: 12px;
+}
+
+.accountTab {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.accountTab span {
+  color: #444;
+}
+
+.currentTab span,
+.accountTab:hover span {
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+.swal2-popup {
+  width: 35rem !important;
+  padding: 2rem !important;
+}
+
+.swalInputAlert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.swal2-input {
+  margin-top: 0rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.swal2-label {
+  margin-bottom: 0.5rem !important;
+}

@@ -1,0 +1,114 @@
+.pageContent {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  width: 220px;
+}
+
+label {
+  margin-left: 5px;
+}
+
+hr {
+  color: #444;
+  margin: 1rem 0;
+}
+
+select {
+  cursor: pointer;
+}
+
+select,
+input:not([type='radio']) {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+input[type='search'] {
+  background-image: url('../svg/search_icon.svg');
+  background-position: 8px center;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  padding: 5px 5px 5px 35px;
+}
+
+.tableContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+  margin: 0 20px;
+  width: 100%;
+}
+
+.tables {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tables td,
+.tables th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  height: 36px;
+}
+
+.tables th {
+  background-color: #f7f7f7;
+}
+
+.tables tr:hover td {
+  background-color: #eff3e4;
+}
+
+.tables tr:nth-child(even) {
+  background-color: #f7f9f2;
+}
+
+.selectedRow td {
+  background-color: #eff3e4;
+}
+
+.paginationContainer,
+#paginationNumbers {
+  display: flex;
+  justify-content: center;
+}
+
+.paginationButton,
+.paginationNumber {
+  background-color: #fff;
+  color: #444;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.activePage {
+  background-color: #798754;
+  color: white;
+}
+
+.paginationButton:hover:not(.disabledPageButton),
+.paginationNumber:hover:not(.activePage) {
+  background-color: #eff3e4;
+}
+
+.disabledPageButton {
+  cursor: default;
+  color: #d6d6d6;
+}

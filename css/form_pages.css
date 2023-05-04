@@ -1,0 +1,278 @@
+.pageBody {
+  max-width: 900px;
+}
+
+input,
+textarea,
+select {
+  display: block;
+  padding: 8px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+label {
+  display: inline-block;
+  margin-left: 8px;
+  margin-bottom: 5px;
+}
+
+textarea {
+  background-color: #eeeeee;
+  border: none;
+  border-radius: 8px;
+}
+
+select {
+  cursor: pointer;
+}
+
+form p {
+  margin-bottom: 15px;
+}
+
+#submit {
+  align-self: flex-end;
+}
+
+.formInputError {
+  font-size: 12px;
+  margin-bottom: 10px;
+  margin-left: 8px;
+  color: red;
+  display: none;
+}
+
+.formInputErrorActive {
+  display: block;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.inputContainer label {
+  margin-bottom: 5px;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.inputContainer label {
+  margin-bottom: 5px;
+}
+
+.imageStyle {
+  border: 2px solid #ddd;
+  width: 150px;
+  height: 150px;
+}
+
+#userInfoForm,
+#myProfileForm {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  row-gap: 20px;
+}
+
+.profilePictureContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.allInputsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 0.5rem;
+}
+
+#userInfoButtonContainer {
+  grid-column: 2;
+}
+
+select:required:invalid {
+  color: #666;
+}
+
+.containerUserRegistration {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+}
+
+.photoUserRegistration {
+  justify-self: center;
+  align-self: start;
+}
+
+.inputsUserRegistration {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-self: end;
+  width: 100%;
+}
+
+.buttonsUserRegistration {
+  justify-self: end;
+  align-self: start;
+  grid-column: 2;
+}
+
+#userIdLabelUserRegistration {
+  grid-column: 1/3;
+}
+
+.containerAssetTransfer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#transferDescriptionLabel,
+#mandatoryFields,
+#transferPictureContainer {
+  grid-column: 1/3;
+}
+
+#firstColumn {
+  display: grid;
+  grid-column: 1/2;
+}
+
+#centerFirstColumn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-self: left;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.uploadPictureAsset {
+  background-color: #e7e7e7;
+  color: #949494;
+  border: none;
+  border-radius: 12px;
+  text-align: left;
+  text-decoration: none;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  width: 75%;
+  font-size: 11px;
+  justify-self: left;
+}
+
+#uploadPictureAsset:hover {
+  background-color: darkgrey;
+  color: white;
+}
+
+#buttonContainer {
+  display: flex;
+  gap: 1rem;
+  grid-column: 2/3;
+  justify-self: end;
+}
+
+.imageStyleTransfers {
+  border: 2px solid #ddd;
+  width: 150px;
+  height: 150px;
+  margin: 4px;
+  object-fit: cover;
+}
+
+#titleMargin {
+  margin-left: 7px;
+}
+
+#assetTransferRequest {
+  max-width: 80%;
+}
+
+#userIdLabel,
+#userUnitLabel,
+#userProfilePictureLabel,
+#assetDescriptionLabel {
+  grid-column: 1/3;
+}
+
+#transferUploadButton1Error {
+  grid-column: 1;
+}
+#transferUploadButton2Error {
+  grid-column: 2;
+}
+
+.signinSignupMain {
+  margin-top: 2rem;
+}
+
+#assetTransferRequestReviewForm {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  gap: 2rem;
+}
+
+.formInputContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr) 2fr;
+  column-gap: 1rem;
+}
+
+.assetTransferRequestPictureContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.buttonContainer {
+  grid-column: 1/3;
+  align-self: end;
+}
+
+.assetTransferPicture {
+  height: 12.5rem;
+  width: 12.5rem;
+  object-fit: cover;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 5px #00000099;
+}
+
+.userImageDisplay {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#profilePictureInput,
+#userPictureInput {
+  display: none;
+}
+
+#changePasswordForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 30rem;
+}
