@@ -31,7 +31,7 @@ https://github.com/cariasj03/sica_app.git
 • Filter and sort assets: Use the filter and sort options to customize the display of assets.
 
 # Contributing
-If you would like to contribute to this project, you can fork the repository and create a pull request with your changes. Please provide detailed information about the changes you made and the rationale behind them.
+If you would like to contribute, you can fork the repository and create a pull request with your changes. Please provide detailed information about the changes you made and the rationale behind them.
 
 # License
 This project is licensed under the MIT License - see the LICENSE file for details.
